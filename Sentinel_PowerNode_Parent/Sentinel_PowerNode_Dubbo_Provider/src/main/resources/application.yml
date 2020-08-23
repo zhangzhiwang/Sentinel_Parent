@@ -1,0 +1,14 @@
+server:
+  port: 8082
+  
+#spring:
+#  cloud:
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8080 #连接sentinel管理控制台
+        
+dubbo:
+  application:
+    name: Sentinel-PowerNode-Dubbo-Provider
+  registry:
+    address: zookeeper://localhost:2181 

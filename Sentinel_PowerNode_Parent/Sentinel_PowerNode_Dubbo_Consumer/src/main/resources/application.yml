@@ -1,0 +1,15 @@
+server:
+  port: 8083
+  
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #应用连接sentinel管理控制台的地址
+        port: 12345 #sentinel的dashboard向应用拉取数据的端口
+        
+dubbo:
+  application:
+    name: Sentinel-PowerNode-Dubbo-Consumer
+  registry:
+    address: zookeeper://localhost:2181 

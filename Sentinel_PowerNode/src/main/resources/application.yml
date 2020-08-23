@@ -1,0 +1,8 @@
+server:
+  port: 8081
+  
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #连接sentinel管理控制台
